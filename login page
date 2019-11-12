@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <style media="screen">
+      body{
+        background-color:#dceaf7;
+      }
+      .login{
+        height: 400px;
+        width:400px;
+        background-color:#dadde0;
+        margin-top:12%;
+        margin-left:35%;
+      }
+      .form_group{
+        padding:35px 25px;
+
+
+      }
+      .blogin{
+        width:250px;
+        margin-left:15%;
+        margin-top:12px;
+        color: white;
+      }
+      .signup-page{
+        margin-left:22%;
+      }
+      .forget-password{
+        color:grey;
+        margin-left:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="login">
+
+        <form class="form_group">
+          <h2>Login</h2>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter Email">
+            <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password">
+          </div>
+          <div class="row">
+            <div class="form-check col-sm-6">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+            </div>
+            <div class="forget-password">
+              <a href="#">Forgot Password?</a>
+            </div>
+
+          </div>
+          <button type="submit" class="btn btn-warning blogin">LOGIN</button><br>
+          <small class="signup-page">Don't you have an account?<a href="#">SighUP</a></small>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
